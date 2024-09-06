@@ -2,7 +2,8 @@ body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #000; /* Preto para o fundo */
+    color: #fff; /* Texto branco para contraste */
 }
 
 .container {
@@ -19,6 +20,7 @@ body {
 .container__titulo {
     font-size: 2rem;
     margin-bottom: 20px;
+    color: #ff007f; /* Rosa para o título */
 }
 
 .container__imagem {
@@ -29,7 +31,7 @@ body {
 
 .container__descricao {
     font-size: 1rem;
-    color: #333;
+    color: #ccc; /* Cinza claro para o texto das descrições */
     margin: 10px 0;
 }
 
@@ -38,14 +40,14 @@ body {
     padding: 10px 20px;
     margin: 10px;
     text-decoration: none;
-    color: white;
-    background-color: #000;
+    color: #fff;
+    background-color: #ff007f; /* Rosa para o botão */
     border-radius: 5px;
     font-weight: 700;
 }
 
 .botao_secundario {
-    background-color: #555;
+    background-color: #ff4d8a; /* Rosa mais claro para o botão secundário */
 }
 
 .secundario {
@@ -53,8 +55,8 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #111; /* Preto escuro para o fundo da seção secundária */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -66,6 +68,7 @@ body {
 
 .descricao__titulo {
     font-size: 1.5rem;
+    color: #ff007f; /* Rosa para o título da descrição */
 }
 
 .descricao__texto {
@@ -81,6 +84,7 @@ body {
 .dispositivos__titulo {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    color: #ff007f; /* Rosa para o título dos dispositivos */
 }
 
 .dispositivos__lista {
@@ -101,8 +105,8 @@ body {
 .rodape {
     text-align: center;
     padding: 20px;
-    background-color: #333;
-    color: #fff;
+    background-color: #000; /* Preto para o fundo do rodapé */
+    color: #fff; /* Texto branco para contraste */
 }
 
 .rodape__logo {
@@ -123,10 +127,10 @@ body {
 
 .rodape__lista a {
     text-decoration: none;
-    color: #fff;
+    color: #ff007f; /* Rosa para os links do rodapé */
 }
 
 .rodape__texto {
     font-size: 0.8rem;
-    color: #ccc;
+    color: #ccc; /* Cinza claro para o texto do rodapé */
 }
