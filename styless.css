@@ -1,136 +1,45 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-rosa: #FF007F;
+    --botao-rosa-efeito: #FF66B2;
+    --cor-de-fundo: #000000;
+    --fonte-principal: 'Inter';
+}
+
 body {
-    font-family: 'Inter', sans-serif;
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     margin: 0;
-    padding: 0;
-    background-color: #000; /* Preto para o fundo */
-    color: #fff; /* Texto branco para contraste */
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.principal {
     text-align: center;
-    padding: 20px;
 }
 
 .container__titulo {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #ff007f; /* Rosa para o título */
-}
-
-.container__imagem {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.container__descricao {
-    font-size: 1rem;
-    color: #ccc; /* Cinza claro para o texto das descrições */
-    margin: 10px 0;
+    color: var(--branco-principal);
 }
 
 .container__botao {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
-    text-decoration: none;
-    color: #fff;
-    background-color: #ff007f; /* Rosa para o botão */
+    background-color: var(--botao-rosa);
     border-radius: 5px;
-    font-weight: 700;
-}
-
-.botao_secundario {
-    background-color: #ff4d8a; /* Rosa mais claro para o botão secundário */
-}
-
-.secundario {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #111; /* Preto escuro para o fundo da seção secundária */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.secundario__imagem {
-    width: 50%;
-    max-width: 600px;
-}
-
-.descricao__titulo {
-    font-size: 1.5rem;
-    color: #ff007f; /* Rosa para o título da descrição */
-}
-
-.descricao__texto {
-    font-size: 1rem;
-    margin: 10px 0;
-}
-
-.dispositivos {
-    text-align: center;
-    padding: 20px;
-}
-
-.dispositivos__titulo {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #ff007f; /* Rosa para o título dos dispositivos */
-}
-
-.dispositivos__lista {
-    list-style: none;
-    padding: 0;
-}
-
-.dispositivos__lista li {
-    display: inline-block;
-    margin: 10px;
-}
-
-.dispositivos__lista img {
-    width: 50px;
-    vertical-align: middle;
-}
-
-.rodape {
-    text-align: center;
-    padding: 20px;
-    background-color: #000; /* Preto para o fundo do rodapé */
-    color: #fff; /* Texto branco para contraste */
-}
-
-.rodape__logo {
-    width: 100px;
-    margin-bottom: 20px;
-}
-
-.rodape__lista {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0;
-}
-
-.rodape__lista li {
-    display: inline;
-    margin: 0 10px;
-}
-
-.rodape__lista a {
+    padding: 10px 20px;
+    color: var(--branco-principal);
     text-decoration: none;
-    color: #ff007f; /* Rosa para os links do rodapé */
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
-.rodape__texto {
-    font-size: 0.8rem;
-    color: #ccc; /* Cinza claro para o texto do rodapé */
+.container__botao:hover {
+    background-color: var(--botao-rosa-efeito);
 }
