@@ -177,4 +177,15 @@ body {
         grid-template-columns: 1fr;
     }
 
-    .
+    .secundario__imagem, .container__imagem {
+        width: 100%;
+    }
+
+    .secundario, .dispositivos {
+        padding: 1em;
+    }
+
+    .container__caixa {
+        margin: 0 1em;
+    }
+}
