@@ -2,52 +2,97 @@
 <html>
 
 <head>
-    <title>Show do Blackpink - Ingressos</title>
+    <title>Blackpink Born Pink Show</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background-color: #f9f9f9;
-        }
-        .container {
-            text-align: center;
-        }
-        .container__titulo {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-        .container__botao {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 1.2rem;
-            color: white;
-            background-color: #000;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .container__botao:hover {
-            background-color: #333;
-        }
-    </style>
 </head>
 
 <body>
-    <section class="container">
-        <h1 class="container__titulo">Garanta seu ingresso para o show do Blackpink!</h1>
-        <a href="www.exemplo.com" class="container__botao">Comprar Ingresso</a>
+    <section class="principal container">
+        <div class="container__caixa">
+            <h1 class="container__titulo">Blackpink Born Pink Show</h1>
+            <img src="img/BlackpinkShow.png" alt="Blackpink Born Pink Show" class="container__imagem">
+            <a href="www.blackpink.com" class="container__botao">Compre Ingressos</a>
+            <a href="www.blackpink.com" class="container__botao botao_secundario">Mais Informações</a>
+        </div>
     </section>
+
+    <section class="container secundario">
+        <img src="img/Performance.png" alt="Performance do Blackpink" class="secundario__imagem">
+        <div class="container__descricao">
+            <h2 class="descricao__titulo">Uma Experiência Inesquecível</h2>
+            <p class="descricao__texto">Assista aos maiores hits ao vivo e sinta a energia única de um show do Blackpink.</p>
+        </div>
+    </section>
+
+    <section class="container secundario">
+        <div class="container__descricao">
+            <p class="descricao__texto">
+                Vivencie o show em uma atmosfera épica com a performance das suas músicas favoritas. Não perca esta oportunidade única!
+            </p>
+            <a href="www.blackpink.com" class="container__botao secundario__botao">Compre Ingressos Agora</a>
+        </div>
+        <img src="img/Setlist.png" alt="Setlist do Show" class="secundario__imagem">
+    </section>
+
+    <section class="container secundario">
+        <img src="img/BlackpinkOnStage.png" alt="Blackpink no Palco" class="secundario__imagem">
+        <div class="container__descricao">
+            <h2 class="descricao__titulo">Assista ao Vivo</h2>
+            <p class="descricao__texto">Viva cada momento do show como se estivesse lá, com uma experiência de streaming de alta qualidade.</p>
+        </div>
+    </section>
+
+    <section class="dispositivos">
+        <h2 class="dispositivos__titulo">Disponível em Todos os Dispositivos</h2>
+        <ul class="dispositivos__lista">
+            <li>
+                <img src="img/tv.png" alt="Ícone de televisão">
+                <h3 class="lista__item">TV</h3>
+            </li>
+            <li>
+                <img src="img/computador.png" alt="Ícone de computador">
+                <h3 class="lista__item">Computador</h3>
+            </li>
+            <li>
+                <img src="img/celular.png" alt="Ícone de celular">
+                <h3 class="lista__item">Celular</h3>
+            </li>
+        </ul>
+    </section>
+
+    <footer class="rodape">
+        <img src="img/LogoBlackpink.png" alt="Blackpink" class="rodape__logo">
+        <ul class="rodape__lista">
+            <li class="lista__link">
+                <a href="#">Idioma</a>
+            </li>
+            <li class="lista__link">
+                <a href="#">Dispositivos Compatíveis</a>
+            </li>
+            <li class="lista__link">
+                <a href="#">Contrato de Ingressos</a>
+            </li>
+            <li class="lista__link">
+                <a href="#">Política de Privacidade</a>
+            </li>
+            <li class="lista__link">
+                <a href="#">Proteção de Dados</a>
+            </li>
+            <li class="lista__link">
+                <a href="#">Anúncios Personalizados</a>
+            </li>
+            <li class="lista__link">
+                <a href="#">Ajuda</a>
+            </li>
+        </ul>
+        <p class="rodape__texto">® 2024 Blackpink. Todos os direitos reservados. Serviço de ingressos sujeito à disponibilidade.</p>
+        <p class="rodape__texto">Blackpink é uma marca registrada. Serviço de vendas de ingressos realizado por Blackpink Inc., Rua das Estrelas, 123 - São Paulo - SP, 12345-678, Brasil.</p>
+    </footer>
 </body>
 
 </html>
