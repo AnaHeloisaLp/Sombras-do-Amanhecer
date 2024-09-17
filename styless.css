@@ -1,21 +1,19 @@
 :root {
-    --branco-principal: #FFFFFF;
-    --cinza-secundario: #C0C0C0;
-    --botao-azul: #167BF7;
-    --cor-de-fundo: #00030C;
-    --fonte-principal: 'Inter', sans-serif;
-    --botao-azul-efeito: #3c92fa;
-    --cor-botao-secundario: #ff0066;
-    --cor-botao-secundario-hover: #cc0052;
+    --cor-fundo: #000000; /* Preto */
+    --cor-principal: #FF007F; /* Rosa vibrante */
+    --cor-secundaria: #FFC0CB; /* Rosa claro */
+    --cor-texto: #FFFFFF; /* Branco */
+    --cor-botao-hover: #E6007D; /* Rosa mais escuro */
+    --cor-secundario-botao: #FF66B2; /* Rosa intermediário */
 }
 
 body {
-    font-family: var(--fonte-principal);
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--cor-de-fundo);
-    color: var(--branco-principal);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
 }
 
 .container {
@@ -32,6 +30,7 @@ body {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
+    color: var(--cor-principal);
 }
 
 .container__imagem {
@@ -47,14 +46,15 @@ body {
     font-size: 1rem;
     font-weight: 700;
     text-decoration: none;
-    color: var(--branco-principal);
-    background-color: var(--cor-botao-secundario);
+    color: var(--cor-texto);
+    background-color: var(--cor-principal);
     border-radius: 30px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .container__botao:hover, .botao_secundario:hover, .secundario__botao:hover {
-    background-color: var(--cor-botao-secundario-hover);
+    background-color: var(--cor-botao-hover);
+    color: var(--cor-fundo);
 }
 
 .secundario {
@@ -72,12 +72,14 @@ body {
 
 .container__descricao {
     width: 48%;
+    color: var(--cor-texto);
 }
 
 .descricao__titulo {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1rem;
+    color: var(--cor-principal);
 }
 
 .descricao__texto {
@@ -90,6 +92,7 @@ body {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 2rem;
+    color: var(--cor-principal);
 }
 
 .dispositivos__lista {
@@ -106,12 +109,13 @@ body {
 .lista__item {
     font-size: 1.2rem;
     margin-top: 1rem;
+    color: var(--cor-texto);
 }
 
 /* Rodapé */
 .rodape {
-    background-color: var(--cor-de-fundo);
-    color: var(--branco-principal);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
     padding: 2rem 0;
     text-align: center;
 }
@@ -131,12 +135,13 @@ body {
 }
 
 .lista__link a {
-    color: var(--branco-principal);
+    color: var(--cor-texto);
     text-decoration: none;
 }
 
 .lista__link a:hover {
     text-decoration: underline;
+    color: var(--cor-principal);
 }
 
 .rodape__texto {
