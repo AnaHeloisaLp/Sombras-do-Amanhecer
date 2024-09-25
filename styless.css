@@ -1,10 +1,10 @@
 :root {
     --branco-principal: #FFFFFF;
     --cinza-secundario: #C0C0C0;
-    --botao-azul: #167BF7;
-    --cor-de-fundo: #00030C;
+    --rosa-principal: #FF6F91; /* Rosa principal */
+    --rosa-secundario: #FFB3C1; /* Rosa secundário mais claro */
+    --cor-de-fundo: #000000; /* Preto */
     --fonte-principal: 'Inter';
-    --botao-azul-efeito: #3c92fa;
 }
 
 body {
@@ -35,7 +35,7 @@ body {
 }
 
 .container__botao {
-    background-color: var(--botao-azul);
+    background-color: var(--rosa-principal); /* Rosa principal para o botão */
     border-radius: 5px;
     padding: 1em;
     color: var(--branco-principal);
@@ -46,7 +46,7 @@ body {
 
 .botao_secundario {
     background-color: transparent;
-    border: 2px solid var(--branco-principal)
+    border: 2px solid var(--branco-principal);
 }
 
 .container__aviso {
@@ -79,7 +79,7 @@ body {
 .descricao__titulo {
     font-weight: 700;
     font-size: 48px;
-    color: var(--branco-principal);
+    color: var(--rosa-principal); /* Título em rosa */
     margin-bottom: 0.1em;
 }
 
@@ -109,7 +109,7 @@ body {
 
 .dispositivos__titulo {
     font-size: 48px;
-    color: var(--branco-principal);
+    color: var(--rosa-principal); /* Título em rosa */
 }
 
 .lista__item {
@@ -129,7 +129,7 @@ body {
     margin-top: 1em;
 }
 
-.lista__link a{
+.lista__link a {
     text-decoration: none;
     color: var(--branco-principal);
     margin-left: 1em;
@@ -142,14 +142,14 @@ body {
 }
 
 .lista__link a:hover {
-    color: var(--botao-azul);
+    color: var(--rosa-principal); /* Rosa ao passar o mouse */
 }
 
 .lista__link a:active {
-    color: purple;
+    color: var(--rosa-secundario); /* Rosa mais claro ao clicar */
 }
 
 .container__botao:hover {
-    background-color: var(--botao-azul-efeito);
+    background-color: var(--rosa-secundario); /* Rosa claro ao passar o mouse */
     color: var(--cor-de-fundo);
 }
