@@ -1,16 +1,15 @@
 :root {
-    --preto-principal: #000000;
-    --rosa-secundario: #FF69B4;
+    --branco-principal: #FFFFFF;
     --cinza-secundario: #C0C0C0;
-    --botao-rosa: #FF1493;
-    --cor-de-fundo: #1A1A1A;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
     --fonte-principal: 'Inter';
-    --botao-rosa-efeito: #FF85B5;
+    --botao-azul-efeito: #3c92fa;
 }
 
 body {
     background-color: var(--cor-de-fundo);
-    color: var(--rosa-secundario);
+    color: var(--branco-principal);
     font-family: var(--fonte-principal);
     font-size: 16px;
     font-weight: 400;
@@ -22,9 +21,9 @@ body {
 }
 
 .principal {
-    background-image: url("img/BackgroundBornPink.png");
+    background-image: url("img/Background.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     align-items: center;
     text-align: center;
 }
@@ -36,19 +35,18 @@ body {
 }
 
 .container__botao {
-    background-color: var(--botao-rosa);
+    background-color: var(--botao-azul);
     border-radius: 5px;
     padding: 1em;
-    color: var(--preto-principal);
+    color: var(--branco-principal);
     display: block;
     text-decoration: none;
     margin-bottom: 1em;
-    font-weight: 700;
 }
 
 .botao_secundario {
     background-color: transparent;
-    border: 2px solid var(--rosa-secundario);
+    border: 2px solid var(--branco-principal)
 }
 
 .container__aviso {
@@ -57,9 +55,8 @@ body {
 }
 
 .container__titulo {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
-    color: var(--rosa-secundario);
 }
 
 .container__imagem {
@@ -82,7 +79,7 @@ body {
 .descricao__titulo {
     font-weight: 700;
     font-size: 48px;
-    color: var(--rosa-secundario);
+    color: var(--branco-principal);
     margin-bottom: 0.1em;
 }
 
@@ -112,12 +109,12 @@ body {
 
 .dispositivos__titulo {
     font-size: 48px;
-    color: var(--rosa-secundario);
+    color: var(--branco-principal);
 }
 
 .lista__item {
     font-size: 32px;
-    color: var(--rosa-secundario);
+    color: var(--branco-principal);
 }
 
 .rodape {
@@ -132,9 +129,9 @@ body {
     margin-top: 1em;
 }
 
-.lista__link a {
+.lista__link a{
     text-decoration: none;
-    color: var(--rosa-secundario);
+    color: var(--branco-principal);
     margin-left: 1em;
 }
 
@@ -145,14 +142,14 @@ body {
 }
 
 .lista__link a:hover {
-    color: var(--botao-rosa);
+    color: var(--botao-azul);
 }
 
 .lista__link a:active {
-    color: #FF00FF;
+    color: purple;
 }
 
 .container__botao:hover {
-    background-color: var(--botao-rosa-efeito);
-    color: var(--preto-principal);
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
 }
